@@ -65,14 +65,6 @@ namespace OriginDLPatcher
 
         public Form1()
         {
-            System.Drawing.Text.PrivateFontCollection privateFonts =
-                      new System.Drawing.Text.PrivateFontCollection();
-            var fontBytes = Properties.Resources._210R_TTF;
-            var fontData = Marshal.AllocCoTaskMem(fontBytes.Length);
-            Marshal.Copy(fontBytes, 0, fontData, fontBytes.Length);
-            privateFonts.AddMemoryFont(fontData, fontBytes.Length);
-            Marshal.FreeCoTaskMem(fontData);
-
             InitialCheck();
             InitializeComponent();
             PatchCheck();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -37,6 +38,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            //this.button1.Font = new System.Drawing.Font(privateFonts.Families[0], 12f);
             this.button1.ForeColor = System.Drawing.Color.Chocolate;
             this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";

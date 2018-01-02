@@ -103,7 +103,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\app.manifest" />
-    <Resource Include="resource\210R.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="pictures.png.ico" />
