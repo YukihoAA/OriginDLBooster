@@ -7,8 +7,8 @@
     <ProjectGuid>{62DEA107-BA6D-4E1C-94BB-56732690C51A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OriginDLPatcher</RootNamespace>
-    <AssemblyName>OriginDLPatcher</AssemblyName>
+    <RootNamespace>OriginDLBooster</RootNamespace>
+    <AssemblyName>OriginDLBooster</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

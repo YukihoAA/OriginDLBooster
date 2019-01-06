@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace OriginDLPatcher
+namespace OriginDLBooster
 {
     public partial class Form1 : Form
     {
@@ -57,9 +57,9 @@ namespace OriginDLPatcher
 
             isPatched = isCdn && isEnv;
             if (isPatched)
-                this.button1.Text = "Unpatch Origin";
+                this.button1.Text = "Deactivate!";
             else
-                this.button1.Text = "Patch Origin";
+                this.button1.Text = "Activate!";
             return isPatched;
         }
 
@@ -77,11 +77,11 @@ namespace OriginDLPatcher
                 System.IO.File.WriteAllText(IniFile, "");
 
                 if (!PatchCheck()) {
-                    System.Windows.Forms.MessageBox.Show("Unpatch Complete!", "Created by @YukihoAA");
+                    System.Windows.Forms.MessageBox.Show("Booster deactivated!", "Created by @YukihoAA");
                 }
                 else
                 {
-                    System.Windows.Forms.MessageBox.Show("Cannot Patch Files");
+                    System.Windows.Forms.MessageBox.Show("Cannot control booster.");
                     Close();
                 }
             }
@@ -94,11 +94,11 @@ namespace OriginDLPatcher
 
                 if (PatchCheck())
                 {
-                    System.Windows.Forms.MessageBox.Show("Patch Complete!", "Created by @YukihoAA");
+                    System.Windows.Forms.MessageBox.Show("Booster activated!", "Created by @YukihoAA");
                 }
                 else
                 {
-                    System.Windows.Forms.MessageBox.Show("Cannot Patch Files");
+                    System.Windows.Forms.MessageBox.Show("Cannot control booster.");
                     Close();
                 }
             }
